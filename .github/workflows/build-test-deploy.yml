@@ -5,9 +5,10 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
       - name: checkout repo
-        uses: checkout@v4
+        uses: actions/checkout@v4
       - name: use node.js
         uses: actions/setup-node@v4
         with:
